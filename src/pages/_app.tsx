@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		uri: "https://flyby-router-demo.herokuapp.com/",
 		cache: new InMemoryCache(),
 	});
+
 	return (
 		<ApolloProvider client={client}>
 			<Component {...pageProps} />
