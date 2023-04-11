@@ -4,7 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 export default function App({ Component, pageProps }: AppProps) {
 	const client = new ApolloClient({
-		uri: "https://flyby-router-demo.herokuapp.com/",
+		uri: "http://localhost:3006/graphql",
 		cache: new InMemoryCache(),
 	});
 
